@@ -1,0 +1,77 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+.list-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Styling for author cards container */
+.author-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* Ensure 3 items per row */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.author-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.author-card:hover {
+  transform: scale(1.05);
+}
+
+.author-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.author-info h3 {
+  font-size: 20px;
+  color: #333;
+  margin-top: 15px;
+}
+
+.author-info p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.author-info strong {
+  color: #000;
+}
+
+/* Responsive Design - For small screen sizes, show 1 author per row */
+@media (max-width: 768px) {
+  .author-cards {
+    grid-template-columns: 1fr; /* 1 author per row on small screens */
+  }
+}

@@ -19,7 +19,7 @@
         <a href="${pageContext.request.contextPath}/Backend/NhaXuatBan/CTDlistNXB.jsp">Nhà Xuất Bản</a>
         <a href="${pageContext.request.contextPath}/Backend/Sach/CTDlistSach.jsp">Sách</a>
         <a href="${pageContext.request.contextPath}/Backend/TacGia/CTDlistTacGia.jsp">Tác Giả</a>
-
+		<a href="${pageContext.request.contextPath}/Backend/ThanhToan/CTDlistThanhToan.jsp">Thanh Toán</a>
         <% if (admin != null) { %>
             <span>Chào, <%= admin.getTaiKhoan() %> | <a href="${pageContext.request.contextPath}/AdminLogout">Đăng Xuất</a></span>
         <% } else { %>
